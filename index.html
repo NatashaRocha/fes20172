@@ -5,6 +5,7 @@
     <script src='js/jquery.min.js'></script>
     <script src='js/fullcalendar.min.js'></script>
     <script src='js/scheduler.min.js'></script>
+     <script src='js/gcal.min.js'></script>
 </header>
 
 <body>
@@ -13,10 +14,15 @@
 
 <script>
     $(document).ready(function() {
-        schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source'
     // page is now ready, initialize the calendar...
 
     $('#calendar').fullCalendar({
+    	schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
+
+    	googleCalendarApiKey: 'AIzaSyDpTCiy9csK1fJJUT1-VK8o5hBNI1mjsXk',
+        events: {
+            googleCalendarId: 'dcc.ufrj.br_7mchgaq78oiqdhg0td1td3acqg@group.calendar.google.com'
+        }
         // put your options and callbacks here
     })
 
