@@ -5,6 +5,7 @@ Alunos:
 
 - Natasha Rocha | 112079422
 - André Muniz | 112028120
+- Chris G. Chinedozie | 114197959
 
 (coloquem o nome e DRE de vocês aqui)
 
