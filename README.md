@@ -3,8 +3,9 @@
 
 Alunos:
 
-Natasha Rocha | 112079422
-André Muniz | 112028120
+- Natasha Rocha | 112079422
+- André Muniz | 112028120
+
 (coloquem o nome e DRE de vocês aqui)
 
 
