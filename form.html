@@ -19,7 +19,22 @@
 
     <form id="formulario">
         <div class='col-sm-6'>
-            <input class="form-control" type="text" title="Digite somente o nome da Materia" id="materia" placeholder="Materia" required=""><br>
+            <input class="form-control" type="text" title="Digite somente o nome da Materia" id="materia" list="materias" placeholder="Materia" required="">
+            <datalist id="materias">
+                <option value="Calculo">
+                <option value="Computação">
+                <option value="Matemática combinatória">
+                <option value="Circuito Lógicos">
+                <option value="Algebra Linear Algorítmo">
+                <option value="Linguagem formais">
+                <option value="Algoritmos e Grafos">
+                <option value="Compiladores">
+                <option value="Fundamentos da Engenharia de Software">
+                <option value="Inteligência Artificial">
+                <option value="Programação Linear">
+                <option value="Sistemas Operacionais">
+            </datalist>
+            <br>
             <input class="form-control" type="text" id="datetimepicker4" placeholder="Data" title="Entra data e horario" required=""><br>
         
             <select class="form-control" id="tipo">
