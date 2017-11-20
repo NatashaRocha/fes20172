@@ -19,8 +19,8 @@
 
     <form id="formulario">
         <div class='col-sm-6'>
-            <input class="form-control" type="text" id="materia" placeholder="Materia"><br>
-            <input class="form-control" type="text" id="datetimepicker4" placeholder="Data"><br>
+            <input class="form-control" type="text" title="Digite somente o nome da Materia" id="materia" placeholder="Materia" required=""><br>
+            <input class="form-control" type="text" id="datetimepicker4" placeholder="Data" title="Entra data e horario" required=""><br>
         
             <select class="form-control" id="tipo">
                 <option value="P1">P1</option>
@@ -38,6 +38,7 @@
 </body>
 
 <script>
+
 
     $("#formulario").submit(function(e){
         e.preventDefault();
@@ -68,4 +69,5 @@
             locale: 'pt-br'
         });
     });
+
 </script>
