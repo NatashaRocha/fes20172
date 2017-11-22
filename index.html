@@ -1,11 +1,15 @@
 <header>
+    <meta charset="UTF-8">
+
     <link href='css/fullcalendar.min.css' rel='stylesheet' />
-    <link href='css/scheduler.min.css' rel='stylesheet' />
-    <script src='js/moment.min.js'></script>
+    <link href='css/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/bootstrap-datetimepicker.min.css' rel='stylesheet' />
     <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/moment.min.js'></script>
+    <script src='js/bootstrap-datetimepicker.min.js'></script>
     <script src='js/fullcalendar.min.js'></script>
-    <script src='js/scheduler.min.js'></script>
-     <script src='js/gcal.min.js'></script>
+    <script src='js/pt-br.js'></script>
 </header>
 
 <body>
@@ -14,17 +18,28 @@
 
 <script>
     $(document).ready(function() {
-    // page is now ready, initialize the calendar...
 
     $('#calendar').fullCalendar({
-    	schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
+        events: '/provas.php',
+        defaultTimedEventDuration: '02:00:00',
+        forceEventDuration: true,
+        displayEventTime: true,
+        displayEventEnd: true,
+        themeSystem: "bootstrap3",
+        customButtons: {
+            add: {
+                text: "+",
+                click: function(){
+                    window.location = "form.html";
+                }
+            }
+        },
 
-    	googleCalendarApiKey: 'AIzaSyDpTCiy9csK1fJJUT1-VK8o5hBNI1mjsXk',
-        events: {
-            googleCalendarId: 'dcc.ufrj.br_7mchgaq78oiqdhg0td1td3acqg@group.calendar.google.com'
+        header: {
+            left: 'prev,next today add',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
         }
-        // put your options and callbacks here
     })
-
 });
 </script>

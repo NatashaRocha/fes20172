@@ -2,31 +2,32 @@
     <meta charset="UTF-8">
 
     <link href='css/fullcalendar.min.css' rel='stylesheet' />
-    <link href='css/scheduler.min.css' rel='stylesheet' />
     <link href='css/bootstrap.min.css' rel='stylesheet' />
     <link href='css/bootstrap-datetimepicker.min.css' rel='stylesheet' />
-    <script src='js/moment.min.js'></script>
     <script src='js/jquery.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
+    <script src='js/moment.min.js'></script>
     <script src='js/bootstrap-datetimepicker.min.js'></script>
     <script src='js/fullcalendar.min.js'></script>
-    <script src='js/scheduler.min.js'></script>
-    <script src='js/gcal.min.js'></script>
     <script src='js/pt-br.js'></script>
 </header>
 
 <body>
-
-    <form id="formulario">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" id="close">X</button>
+        <h1>Adicionar evento</h1>
+    </div>
+    <div class="modal-body">
+        <form id="formulario">
         <div class='col-sm-6'>
             <input class="form-control" type="text" title="Digite somente o nome da Materia" id="materia" list="materias" placeholder="Materia" required="">
             <datalist id="materias">
-                <option value="Calculo">
+                <option value="Cálculo">
                 <option value="Computação">
-                <option value="Matemática combinatória">
-                <option value="Circuito Lógicos">
-                <option value="Algebra Linear Algorítmo">
-                <option value="Linguagem formais">
+                <option value="Matemática Combinatória">
+                <option value="Circuitos Lógicos">
+                <option value="Algebra Linear Algorítmica">
+                <option value="Linguagens formais">
                 <option value="Algoritmos e Grafos">
                 <option value="Compiladores">
                 <option value="Fundamentos da Engenharia de Software">
@@ -47,36 +48,22 @@
             <input class="btn btn-primary" type="submit" id="enviar" value="Adicionar">
         </div>
     </form> 
+    </div>
+    </div>
 
 
 
 </body>
 
 <script>
-
-
     $("#formulario").submit(function(e){
         e.preventDefault();
 
         var materia = $("#materia").val()
-        var horario = $("#horario").val()
-        var data = $("#data").val()
+        var datetime = $("#datetimepicker4").val()
         var tipo = $("#tipo").val();
 
-        alert( tipo + " de " + materia)
-        var event = {
-          'summary': tipo + " de " + materia,
-          'start': {
-            'dateTime': '2017-11-14T09:00:00-07:00',
-            'timeZone': 'America/Sao_Paulo'
-          },
-          'end': {
-            'dateTime': '2017-11-14T17:00:00-07:00',
-            'timeZone': 'America/Sao_Paulo'
-          }
-        }
-
-        //$.post("https://www.googleapis.com/calendar/v3/calendars/dcc.ufrj.br_7mchgaq78oiqdhg0td1td3acqg@group.calendar.google.com/events", event)
+        $.post( "test.php", { title: tipo + " de " + materia, start: datetime } );
     })
 
     $(function() {
@@ -84,5 +71,9 @@
             locale: 'pt-br'
         });
     });
+
+    $("#close").click(function(){
+        window.location = "index.html"
+    })
 
 </script>
