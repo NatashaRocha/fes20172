@@ -61,9 +61,23 @@
 
         var materia = $("#materia").val()
         var datetime = $("#datetimepicker4").val()
-        var tipo = $("#tipo").val();
+        var day = datetime.substring(0, 2)
+        var month = datetime.substring(3, 5)
+        var year = datetime.substring(6, 10)
+        var time = datetime.substring(11, 16) + ":00"
+        var tipo = $("#tipo").val()
 
-        $.post( "test.php", { title: tipo + " de " + materia, start: datetime } );
+        datetime = year + "-" + month + "-" + day + " " + time
+
+        $.ajax({
+            type: 'POST',
+            data: '{"title":"' + tipo + ' de ' + materia + '", "start":"' + datetime + '"}',
+            contentType: "application/json",
+            dataType: 'json'
+        })
+
+        $('#calendar').fullCalendar('refresh')
+        window.location = "index.html"
     })
 
     $(function() {
