@@ -6,7 +6,7 @@ O protótipo do projeto incluirá apenas as etapas do primeiro sprint, que atend
 - Como um usuário qualquer, posso visualizar o calendário com provas agendadas.
 - Como um usuário autenticado, posso adicionar e remover provas.
 
-Toda a parte de filtros e demais requisitos foram reduzidos na criação deste protótipo de baixa fidelidade. O protótipo foca nas particularidades do agendamento e na interface do usuário.
+Toda a parte de filtros e demais requisitos foram reduzidos na criação deste protótipo. O protótipo foca nas particularidades do agendamento e na interface do usuário.
 
 A documentação e artefatos do projeto estão inclusos na [Wiki](https://github.com/NatashaRocha/fes20172/wiki) do mesmo.
 
