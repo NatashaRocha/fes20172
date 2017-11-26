@@ -12,11 +12,11 @@ Toda a parte de filtros e demais requisitos foram reduzidos na criação deste p
 A documentação e artefatos do projeto estão inclusos na [Wiki](https://github.com/NatashaRocha/fes20172/wiki) do mesmo.
 
 ## Como rodar o projeto?
-Faça o download do projeto. Execute o arquivo ```server.py```. O servidor estará rodando na porta 8000 e a página principal pode ser acessada pelo seu navegador de preferência no endereço:  
-``` localhost:8000/index.html ``` ou ```0.0.0.0:8000/index.html```
-
-Se você quiser executar o arquivo pelo terminal, acesse o diretório do projeto e use o seguinte comando (considerando que a máquina possui python instalado):  
+Faça o download do projeto. Execute o arquivo ```server.py```. Se você quiser executar o arquivo pelo terminal, acesse o diretório do projeto e use o seguinte comando (considerando que a máquina possui python instalado):  
 ``` python server.py ```
+
+O servidor estará rodando na porta 8000 e a página principal poderá ser acessada pelo seu navegador de preferência no endereço:  
+``` localhost:8000/index.html ``` ou ```0.0.0.0:8000/index.html```
 
 ## Alunos
 | Membro           | DRE       | Github                                            |
