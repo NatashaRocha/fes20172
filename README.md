@@ -16,6 +16,7 @@ Faça o download do projeto. Execute o arquivo ```server.py```. Se você quiser 
 ``` python server.py ```
 
 O servidor estará rodando na porta 8000 e a página principal poderá ser acessada pelo seu navegador de preferência no endereço:  
+
 ``` localhost:8000/index.html ``` ou ```0.0.0.0:8000/index.html```
 
 ## Alunos
