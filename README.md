@@ -2,7 +2,7 @@
 
 ## Protótipo do Já Tem Prova!
 
-O protótipo do projeto incluirá apenas as etapas do primeiro sprint, que atendem os seguintes casos de uso:
+O protótipo do projeto incluirá apenas as etapas dos sprints [#1](https://github.com/NatashaRocha/fes20172/wiki/Cronograma#sprint-1) e [#3](https://github.com/NatashaRocha/fes20172/wiki/Cronograma#sprint-3), que atendem aos seguintes casos de uso:
 
 - Como um usuário qualquer, posso visualizar o calendário com provas agendadas.
 - Como um usuário autenticado, posso adicionar e remover provas.
