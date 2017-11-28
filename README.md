@@ -13,7 +13,7 @@ A documentação e artefatos do projeto estão inclusos na [Wiki](https://github
 
 ## Como rodar o projeto?
 Faça o download do projeto. Execute o arquivo ```server.py```. Se você quiser executar o arquivo pelo terminal, acesse o diretório do projeto e use o seguinte comando (considerando que a máquina possui python instalado):  
-``` python server.py ```
+``` python3 server.py ```
 
 O servidor estará rodando na porta 8000 e a página principal poderá ser acessada pelo seu navegador de preferência no endereço:  
 
